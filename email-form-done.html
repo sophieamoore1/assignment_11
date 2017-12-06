@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Email Form Page Done</title>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="reset.css" media="all">
+	<link rel="stylesheet" href="styles-form-done.css" media="all">
+</head>
+<body>
+	<header>
+		<nav class="main-nav">
+		</nav>
+	</header>
+	<div class="wrapper">
+		<div class="main">
+			<article>
+				<h1 class="form-heading">Let's Stay in Contact!</h1>
+				<div class="form-text">
+				<p>
+				Find out more information about upcoming events by providing your contact informaiton below. 
+				</p>
+				</div>
+				<form method="post" action="show-data.php" autocomplete="off">
+					<fieldset>
+						<h2 class="site-account">Account</h2>
+							<div class="fields">
+								<p class="row">
+									<label for="first-name">First Name:</label><input type="text" id="first-name" name="first_name" class="field-large" required="required" autofocus="autofocus" />
+								</p>
+								<p class="row">
+									<label for="last-name">Last Name:</label><input type="text" id="last-name" name="last_name" class="field-large" required="required" />
+								</p>
+								<p class="row">
+									<label for="email">Email:</label><input id="email" class="field-large" type="email"  name="email" required="required" />
+								</p>
+								<p class="row">
+									<label for="password">Password:</label><input id="password" type="password" name="password" required="required" />
+								</p>
+								<p class="row">
+									<label for="password2">Re-enter Password:</label><input id="password2" type="password" name="password2" required="required" />
+								</p>
+								<p class="row-motto">
+								<label for="motto">Some more information:</label>
+								<textarea id="motto" name="motto" cols="20" rows="4" placeholder="Anything more to reveal..." class="field-large"></textarea>
+								</p>
+							</div>	
+					</fieldset>
+					<fieldset>
+						<h2 class="site-account">Emails</h2>
+							<div class="fields-checkboxes">
+								<div class="row">
+									<input type="checkbox" id="email-ok-msg-from-users" name="email_signup[]" value="user-emails" />
+									<label for="email-ok-msg-from-users">Subscribe to future emails from us.</label>
+								</div>
+								<div class="row">
+									<input type="checkbox" id="email-ok-occasional-updates" name="email_signup[]" value="occasional-updates" />
+									<label for="email-ok-occasional-updates">Do not subscribe to future emails from us.</label>
+								</div>    			
+							</div>
+					</fieldset>
+					<div class="button-wrapper">
+						<input type="submit" value="Create Account" class="button" />
+					</div>
+				</form>
+			</article>
+		</div>
+	</div>
+	<footer class="site-info">
+	</footer>		
+</body>
+</html>
+	
